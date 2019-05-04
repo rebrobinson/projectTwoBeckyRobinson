@@ -1,0 +1,64 @@
+// PARTIALS IMPORTS
+
+@import "_partials/_setup.scss";
+@import "_partials/_variables.scss";
+
+@import "_partials/_header.scss";
+@import "_partials/_footer.scss";
+
+@import "_partials/_home.scss";
+@import "_partials/_blog.scss";
+@import "_partials/_contact.scss";
+
+// GENERAL STYLES
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 145px;
+}
+
+h2 {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 120px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+//BUTTONS
+
+button {
+    display: block;
+    border: none;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 25px;
+}

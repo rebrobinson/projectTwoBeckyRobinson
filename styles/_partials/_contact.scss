@@ -1,0 +1,93 @@
+
+header.topHalf {
+    background-image: url(../assets/contact-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    h2 {
+        padding-top: 100px;
+    }
+}
+
+.bottomHalf {
+    background: $turquoise;
+    display: flex;
+}
+
+aside.contactAside {
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+.socialNav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    li {
+        margin-right: 25px;
+    }
+}
+
+.socialNav a {
+    color: white;
+    font-size: 25px;
+}
+
+.address {
+    margin-top: 35px;
+    .phone,
+    .street,
+    .city,
+    .postal {
+        margin: 0;
+    }
+}
+
+.emailForm {
+    display: flex;
+    flex-wrap: wrap;
+    background: $purple;
+    border: none;
+    max-width: 850px;
+    margin-left: 130px;
+    padding: 0 50px;
+    position: relative;
+    bottom: 100px;
+    box-shadow: 20px 20px $aqua;
+    .name,
+    .enterEmail {
+        width: calc(50% - 10px);
+        padding: 80px 0px 30px 20px;
+        margin-bottom: 40px;
+        border: none;
+        border-bottom: 2px solid white;
+        background: $purple;
+        color: white;
+        height: 50px;;
+    }
+    .message {
+        width: 100%;
+        padding: 20px 0 200px 20px;
+        margin: 0 0 40px 0;
+        background: $purple;
+        border: 2px solid white;
+        color: white;
+    }   
+    button {
+        background: $aqua;
+        color: $purple;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 6px;
+    }
+}
+
+.name {
+    margin-right: 10px;
+}
+
+.enterEmail {
+    margin-left: 10px;
+}
+
+

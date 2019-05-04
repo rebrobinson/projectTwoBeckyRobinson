@@ -1,0 +1,27 @@
+
+//NAV STYLES
+
+.headNav {
+    margin: 0;
+    padding-top: 50px;
+        ul {
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+            li {
+                margin-right: 50px;
+            }
+}
+
+.headNav a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.headNav a:hover {
+    border-bottom: 3px solid $aqua;
+}
+

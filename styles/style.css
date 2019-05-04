@@ -1,0 +1,500 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
+.headNav {
+  margin: 0;
+  padding-top: 50px; }
+  .headNav ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .headNav li {
+    margin-right: 50px; }
+
+.headNav a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 5px; }
+
+.headNav a:hover {
+  border-bottom: 3px solid #08fded; }
+
+footer {
+  background: #044779; }
+  footer p {
+    text-align: center;
+    padding: 5px;
+    margin: 0; }
+
+.mainHeader {
+  background-image: url(../assets/home-header.jpg);
+  background-size: cover;
+  height: 75vh; }
+  .mainHeader h1 {
+    padding-top: 250px; }
+  .mainHeader .wrapper {
+    position: relative; }
+  .mainHeader .skateboard {
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    right: 0%;
+    top: 250px; }
+    .mainHeader .skateboard img {
+      display: block; }
+
+.info {
+  background-color: #03697c;
+  padding-top: 200px;
+  padding-bottom: 100px; }
+  .info .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+.infoBlock {
+  position: relative;
+  width: calc(50% - 50px);
+  padding-bottom: 50px; }
+  .infoBlock .infoText h3 {
+    margin: 0 0 40px 0; }
+
+.iconCircle {
+  height: 45px;
+  width: 45px;
+  background-color: #08fded;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: absolute;
+  top: -8px;
+  left: -65px; }
+  .iconCircle i {
+    color: #474bb5;
+    position: absolute;
+    top: 12px;
+    left: 12px; }
+
+.infoBlock:nth-child(2) i {
+  left: 10px; }
+
+.infoBlock:nth-child(3) i {
+  left: 16px; }
+
+.infoBlock {
+  margin-left: 50px; }
+
+.blogLinks {
+  background: #474bb5;
+  padding-top: 100px; }
+  .blogLinks article {
+    width: calc(50% - 100px); }
+
+.topBlogLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0; }
+  .topBlogLinks article {
+    margin-left: 325px;
+    padding-right: 80px; }
+  .topBlogLinks .blogLinkImage {
+    position: relative;
+    top: -120px;
+    left: 0;
+    -webkit-box-shadow: 20px 20px #08fded;
+    box-shadow: 20px 20px #08fded; }
+
+.bottomBlogLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20;
+  margin-top: 0; }
+  .bottomBlogLinks article {
+    padding-left: 80px;
+    margin: 0 325px 0 0;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .bottomBlogLinks article p {
+      margin-bottom: 0; }
+  .bottomBlogLinks .blogLinkImage {
+    position: relative;
+    top: -50px;
+    right: 0;
+    -webkit-box-shadow: -20px 20px #08fded;
+    box-shadow: -20px 20px #08fded; }
+
+.blogLinkImage {
+  width: 50%;
+  max-width: 600px; }
+  .blogLinkImage img {
+    display: block;
+    position: relative;
+    z-index: 10; }
+
+.readMore {
+  background: #08fded;
+  margin-top: 50px;
+  padding: 5px 10px; }
+  .readMore a {
+    color: #474bb5;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center; }
+
+.roadTrips {
+  background: #03697c;
+  padding-top: 150px;
+  padding-bottom: 100px; }
+  .roadTrips h3 {
+    text-align: center; }
+  .roadTrips p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto; }
+  .roadTrips button {
+    margin: 0 auto;
+    margin-top: 50px; }
+
+.findOutMore {
+  background: #08fded;
+  padding: 10px 20px; }
+  .findOutMore a {
+    color: #474bb5;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center; }
+
+.beachImage {
+  background-image: url(../assets/banner.jpg);
+  height: 50vh; }
+
+.events {
+  background: #03697c; }
+  .events .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px; }
+
+.eventsImage {
+  width: calc(30% - 50px);
+  margin-right: 50px;
+  -webkit-box-shadow: -20px 20px #08fded;
+  box-shadow: -20px 20px #08fded; }
+  .eventsImage img {
+    display: block; }
+
+.eventsText {
+  width: calc(70% - 50px);
+  margin-left: 50px; }
+
+.gallery {
+  background: #474bb5;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 100px 0; }
+  .gallery .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.galleryItem {
+  width: calc(33% - 40px);
+  margin: 0 20px; }
+
+.blogHeader {
+  background-image: url(../assets/blog-header.jpg);
+  background-size: cover;
+  height: 70vh;
+  position: relative; }
+
+header.topHalf {
+  background-image: url(../assets/contact-header.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 60vh; }
+  header.topHalf h2 {
+    padding-top: 100px; }
+
+.bottomHalf {
+  background: #03697c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+aside.contactAside {
+  margin-left: 10%;
+  margin-top: 100px; }
+
+.socialNav ul {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .socialNav ul li {
+    margin-right: 25px; }
+
+.socialNav a {
+  color: white;
+  font-size: 25px; }
+
+.address {
+  margin-top: 35px; }
+  .address .phone,
+  .address .street,
+  .address .city,
+  .address .postal {
+    margin: 0; }
+
+.emailForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #474bb5;
+  border: none;
+  max-width: 850px;
+  margin-left: 130px;
+  padding: 0 50px;
+  position: relative;
+  bottom: 100px;
+  -webkit-box-shadow: 20px 20px #08fded;
+  box-shadow: 20px 20px #08fded; }
+  .emailForm .name,
+  .emailForm .enterEmail {
+    width: calc(50% - 10px);
+    padding: 80px 0px 30px 20px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: #474bb5;
+    color: white;
+    height: 50px; }
+  .emailForm .message {
+    width: 100%;
+    padding: 20px 0 200px 20px;
+    margin: 0 0 40px 0;
+    background: #474bb5;
+    border: 2px solid white;
+    color: white; }
+  .emailForm button {
+    background: #08fded;
+    color: #474bb5;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 6px; }
+
+.name {
+  margin-right: 10px; }
+
+.enterEmail {
+  margin-left: 10px; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: white; }
+
+img {
+  width: 100%;
+  max-width: 100%; }
+
+h1 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 145px; }
+
+h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 120px;
+  margin: 0; }
+
+h3 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+h4 {
+  font-family: 'Walter Turncoat', cursive; }
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto; }
+
+button {
+  display: block;
+  border: none;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25px; }
