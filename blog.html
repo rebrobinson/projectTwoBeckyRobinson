@@ -26,11 +26,13 @@
     </div>
   </header>
 
-  <main>
-
-    <aside>
+  <main class="blogMain">
+    <div class="blogSideImage">
       <img src="assets/blog-side-image.jpg" alt="Kids picking out chalk from a box.">
-      <div class="">
+    </div>
+
+    <aside class="blogAside">  
+      <div class="asideText">
         <h4>Our Mission</h4>
         <p>Nam dapibus nisl vitate elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
         <h4>Recent Posts</h4>
@@ -43,49 +45,74 @@
       </div>
     </aside>
 
-    <article class="blogPost">
+    
+    <div class="blogWrapper">
       <div class="blogImage">
-        <img src="blog-post-image.jpg" alt="Small child popping giant bubbles.">
-        <div class="blogImageBackground"></div>
+        <img src="assets/blog-post-imag.jpg" alt="Small child popping giant bubbles.">
       </div>
-      <div class="blogWrapper">
-        <h2>New activities</h2>
-        <p>Monday January 30, 2019 by Saron</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-    </article>
+      <article class="blogPost">
+        <div class="blogText">
+          <h3>New activities</h3>
+          <p>Monday January 30, 2019 by Saron</p>
+          <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque
+          Volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut
+          Mi sollicitudin porttitor id sit amen rises. Nam tempus vel odio vitae aliquam.</p>
+          <p>In imperdiet eros id lacks vestibule vestibule. Suspendisse fermentum
+          Sem sagittis ante venenatis geestas quis vel justo. Maecenas semper suscitait
+          Nunc, sed aliquam sapin convolais eu. Nulla ut turpis in diam dapibus
+          Consequent. Fusce vehicle dolor arc, sit amet blanket dolor mollie nec. Donec
+          Viverra erleidend lacu.</p>
+          <p>Lorem ipsum dolor sit amen, consectetur adipiscing elit. Ut pretium pretium
+          Tempor. Ut eget imperiet neque. In volutpat ante semper diam molestie, et
+          Aliquam erat laoreet. Sed sit amen arc aliquot, molestie justo at, actor nuns.
+          Phaselllus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+          Suspendisse luctus mattis cursus. Nam connecteur ante at nisl hendrerit
+          Gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis.
+          Fusce porttitor a mi art susciput.</p>
+          <p>Present fraciliisis dolor sapier, vel sojales augue mollis ut. Mauris veneenatis
+          Magna eu torero poseur luctus. Aenean tincidunt turpis sed dus Aliquam
+          Vehicle.</p>
+        </div>
+      </article>
 
-    <section>
-      <h3>Comments:</h3>
-      <div class="comment comment1">
-        <img src="assets/comment-1.jpg" alt="Image of commenter">
-        <p class="commentDate">Tuesday October 9th, 2019 by Mariama</p>
-        <p class="commentMessage">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus.</p>
-      </div>
-      <div class="comment comment2">
-        <img src="assets/comment-2.jpg" alt="Image of commenter">
-        <p class="commentDate">Wednesday October 10th, 2019 by Rob</p>
-        <p class="commentMessage">Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
-      </div>
-    </section>
+      <section class="commentSection">
+        <h3>Comments:</h3>
+        <div class="comment comment1">
+          <div class="commenter1">
+            <img src="assets/comment-1.jpg" alt="Image of commenter">
+          </div>
+          <div class="commentText">
+            <p class="commentDate">Tuesday October 9th, 2019 by Mariama</p>
+            <p class="commentMessage">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
+              vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.
+              Maecenas eu varius risus.</p>
+          </div>
+        </div>
+        <div class="comment comment2">
+          <div class="commenter2">
+            <img src="assets/comment-2.jpg" alt="Image of commenter">
+          </div>
+          <div class="commentText">
+            <p class="commentDate">Wednesday October 10th, 2019 by Rob</p>
+            <p class="commentMessage">Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc
+              sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
+          </div>
+        </div>
+      </section>
 
-    <fieldset>
-      <legend>Leave a comment</legend>
-
-      <label for="name">Enter name</label>
-      <input type="text" id="name">
-
-      <label for="email">Enter email</label>
-      <input type="email" id="enterEmail">
-
-      <label for="enterComment">Enter comment</label>
-      <input type="text" id="enterComment">
-
-      <button type="submit">Post Comment</button>
-    </fieldset>
+      <fieldset class="commentForm">
+        <legend class="visuallyHidden">Leave a comment</legend>
+        <div class="nameAndEmail">
+          <label for="name" class="visuallyHidden">Enter name</label>
+          <input type="text" id="name" class="commentName" value="Name">
+          <label for="email" class="visuallyHidden">Enter email</label>
+          <input type="email" id="enterEmail" class="commentEmail" value="Email address">
+        </div>
+        <label for="enterComment" class="visuallyHidden">Enter comment</label>
+        <input type="text" id="enterComment" class="commentMessage" value="Comment">
+        <button type="submit" class="postComment">Post Comment</button>
+      </fieldset>
+    </div> <!--end of blog wrapper-->
   
   </main>
 

@@ -6,4 +6,176 @@
     background-size: cover;
     height: 70vh;
     position: relative;
+    h2 {
+        padding-top: 100px;
+    }
 }
+
+//MAIN SECTION
+
+.blogMain {
+    background: $turquoise;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    h3 {
+        font-size: 70px;
+    }
+}
+
+.blogAside {
+    background: $purple;
+    max-width: 380px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 400px 30px 10px 30px;
+    width: calc(40% - 200px);
+    height: 100%;
+    h4 {
+        margin-bottom: 0;
+    }
+}
+
+.asideText {
+    p {
+        margin-bottom: 60px;
+    }
+    ul {
+        list-style: none;
+    }
+    /* got this from w3schools.com */
+    ul li::before {
+        content: "\2022"; 
+        color: $aqua; 
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -1em; 
+    }
+    li {
+        line-height: 35px;
+    }
+}
+
+.blogSideImage {
+    position: absolute; 
+    left: 0px;
+    top: 120px;
+    width: 30%;
+    img {
+        display: block;
+    }
+}
+
+.blogWrapper {
+    width: 65%;
+    position: relative;
+}
+
+.blogPost {
+    border-left: 5px solid $aqua;
+    border-bottom: 5px solid $aqua;
+    position: relative;
+    top: -200px;
+    padding: 30px 100px 100px 130px;
+    h3 {
+        margin-top: 600px;
+        margin-bottom: 50px;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.blogImage {
+    box-shadow: -20px 20px $aqua;
+    max-width: calc(100% - 20px);
+    position: absolute;
+    top: -300px;
+    right: 0;
+    img {
+        display: block;
+    }
+}
+
+.commentSection {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 100px;
+    .commenter1,
+    .commenter2 {
+        width: calc(15% - 20px);
+        margin-right: 20px;
+    }
+    .commentText {
+        width: calc(85% - 20px);
+        margin-left: 20px;
+        p.commentDate {
+            margin-top: 0;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+}
+
+.comment2 {
+    margin-bottom: 70px;
+}
+
+//FORM STYLES
+.commentForm {
+    border: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    .commentName,
+    .commentEmail, 
+    .commentMessage {
+        background: $turquoise;
+        color: white;
+        border: none;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .commentName, 
+    .commentEmail {
+        border-bottom: 2px solid $aqua;
+        width: calc(50% - 25px);
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+    .commentName {
+        margin-right: 25px;
+    }
+    .commentEmail {
+        margin-left: 25px;
+    }
+    .commentMessage {
+        width: 100%;
+        padding: 20px 0 250px 25px;
+        border: 2px solid $aqua;
+    }
+    .postComment {
+        background: $aqua;
+        color: $purple;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+}
+
+.nameAndEmail {
+    display: flex;
+}
+
+
+
+
+
+
+

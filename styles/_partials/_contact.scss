@@ -7,6 +7,13 @@ header.topHalf {
     h2 {
         padding-top: 100px;
     }
+    .wrapper i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
 }
 
 .bottomHalf {
@@ -89,5 +96,138 @@ aside.contactAside {
 .enterEmail {
     margin-left: 10px;
 }
+
+
+//MEDIA QUERIES
+
+@media (max-width: 1480px) {
+    .emailForm {
+        margin-left: 100px;
+    }
+    
+    aside.contactAside {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .topHalf {
+        h2 {
+            font-size: 100px;
+        }
+    }
+    .bottomHalf {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .emailForm {
+        margin-left: 0;
+    }
+    aside.contactAside {
+        margin-top: 0;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 50px 50px 50px;
+        padding-bottom: 50px;
+        .socialNav {
+            margin-right: 30px;
+            margin-top: 0;
+        }
+        .infoEmail {
+            margin: 0 30px;
+        }
+        .address {
+            margin-left: 30px;
+            margin-top: 0;
+        }
+    }
+    .socialNav {
+        ul {
+            margin-top: 0;
+        }
+    }
+
+}
+
+@media (max-width: 875px) {
+    .topHalf {
+        h2 {
+            font-size: 75px;
+        }
+    }
+    .emailForm {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    header.topHalf {
+        .wrapper {
+            i {
+                visibility: visible;
+            }
+        }
+    }
+    .topHalf {
+        h2 {
+            font-size: 60px;
+            line-height: 80px;
+            text-align: center;
+        }
+        .wrapper .headNav {
+            display: none;
+        }
+    }
+    .emailForm {
+        max-width: 300px;
+        flex-direction: column;
+        padding: 0 20px;
+        bottom: 200px;
+        .name,
+        .enterEmail {
+            width: 100%;
+            margin: 0;
+            padding: 20px 0 15px 5px;
+        }
+        .name {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .enterEmail {
+            margin-bottom: 50px;
+        }
+    }
+    .contactAside {
+        flex-direction: column;
+        align-items: center;
+    }
+    aside.contactAside {
+        .socialNav {
+            margin-right: 0;
+            ul {
+                li {
+                    margin: 0 20px;
+                }
+            }
+        }
+        .infoEmail {
+            margin: 0;
+            text-align: center;
+        }
+        .address {
+            text-align: center;
+            margin: 20px 0 0 0;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .emailForm {
+        box-shadow: none;
+    }
+}
+
 
 

@@ -237,12 +237,17 @@ footer {
   padding-top: 100px; }
   .blogLinks article {
     width: calc(50% - 100px); }
+    .blogLinks article h3 {
+      margin-bottom: 10px; }
 
 .topBlogLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   .topBlogLinks article {
     margin-left: 325px;
     padding-right: 80px; }
@@ -258,7 +263,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20;
-  margin-top: 0; }
+  margin-top: 0;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   .bottomBlogLinks article {
     padding-left: 80px;
     margin: 0 325px 0 0;
@@ -277,7 +285,7 @@ footer {
       margin-bottom: 0; }
   .bottomBlogLinks .blogLinkImage {
     position: relative;
-    top: -50px;
+    top: 30px;
     right: 0;
     -webkit-box-shadow: -20px 20px #08fded;
     box-shadow: -20px 20px #08fded; }
@@ -336,7 +344,10 @@ footer {
     display: -ms-flexbox;
     display: flex;
     padding-top: 150px;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .eventsImage {
   width: calc(30% - 50px);
@@ -373,6 +384,145 @@ footer {
   background-size: cover;
   height: 70vh;
   position: relative; }
+  .blogHeader h2 {
+    padding-top: 100px; }
+
+.blogMain {
+  background: #03697c;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative; }
+  .blogMain h3 {
+    font-size: 70px; }
+
+.blogAside {
+  background: #474bb5;
+  max-width: 380px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 400px 30px 10px 30px;
+  width: calc(40% - 200px);
+  height: 100%; }
+  .blogAside h4 {
+    margin-bottom: 0; }
+
+.asideText {
+  /* got this from w3schools.com */ }
+  .asideText p {
+    margin-bottom: 60px; }
+  .asideText ul {
+    list-style: none; }
+  .asideText ul li::before {
+    content: "\2022";
+    color: #08fded;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+  .asideText li {
+    line-height: 35px; }
+
+.blogSideImage {
+  position: absolute;
+  left: 0px;
+  top: 120px;
+  width: 30%; }
+  .blogSideImage img {
+    display: block; }
+
+.blogWrapper {
+  width: 65%;
+  position: relative; }
+
+.blogPost {
+  border-left: 5px solid #08fded;
+  border-bottom: 5px solid #08fded;
+  position: relative;
+  top: -200px;
+  padding: 30px 100px 100px 130px; }
+  .blogPost h3 {
+    margin-top: 600px;
+    margin-bottom: 50px; }
+  .blogPost p {
+    margin-bottom: 30px; }
+
+.blogImage {
+  -webkit-box-shadow: -20px 20px #08fded;
+  box-shadow: -20px 20px #08fded;
+  max-width: calc(100% - 20px);
+  position: absolute;
+  top: -300px;
+  right: 0; }
+  .blogImage img {
+    display: block; }
+
+.commentSection {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px; }
+  .comment .commenter1,
+  .comment .commenter2 {
+    width: calc(15% - 20px);
+    margin-right: 20px; }
+  .comment .commentText {
+    width: calc(85% - 20px);
+    margin-left: 20px; }
+    .comment .commentText p.commentDate {
+      margin-top: 0;
+      font-weight: 700;
+      font-style: italic; }
+
+.comment2 {
+  margin-bottom: 70px; }
+
+.commentForm {
+  border: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto; }
+  .commentForm .commentName,
+  .commentForm .commentEmail,
+  .commentForm .commentMessage {
+    background: #03697c;
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+    padding: 0; }
+  .commentForm .commentName,
+  .commentForm .commentEmail {
+    border-bottom: 2px solid #08fded;
+    width: calc(50% - 25px);
+    padding-bottom: 20px;
+    padding-left: 30px; }
+  .commentForm .commentName {
+    margin-right: 25px; }
+  .commentForm .commentEmail {
+    margin-left: 25px; }
+  .commentForm .commentMessage {
+    width: 100%;
+    padding: 20px 0 250px 25px;
+    border: 2px solid #08fded; }
+  .commentForm .postComment {
+    background: #08fded;
+    color: #474bb5;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 100px; }
+
+.nameAndEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 header.topHalf {
   background-image: url(../assets/contact-header.jpg);
@@ -381,6 +531,12 @@ header.topHalf {
   height: 60vh; }
   header.topHalf h2 {
     padding-top: 100px; }
+  header.topHalf .wrapper i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    visibility: hidden; }
 
 .bottomHalf {
   background: #03697c;
@@ -458,6 +614,106 @@ aside.contactAside {
 .enterEmail {
   margin-left: 10px; }
 
+@media (max-width: 1480px) {
+  .emailForm {
+    margin-left: 100px; }
+  aside.contactAside {
+    margin-left: 5%; } }
+
+@media (max-width: 1000px) {
+  .topHalf h2 {
+    font-size: 100px; }
+  .bottomHalf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .emailForm {
+    margin-left: 0; }
+  aside.contactAside {
+    margin-top: 0;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 50px 50px 50px;
+    padding-bottom: 50px; }
+    aside.contactAside .socialNav {
+      margin-right: 30px;
+      margin-top: 0; }
+    aside.contactAside .infoEmail {
+      margin: 0 30px; }
+    aside.contactAside .address {
+      margin-left: 30px;
+      margin-top: 0; }
+  .socialNav ul {
+    margin-top: 0; } }
+
+@media (max-width: 875px) {
+  .topHalf h2 {
+    font-size: 75px; }
+  .emailForm {
+    max-width: 600px; } }
+
+@media (max-width: 600px) {
+  header.topHalf .wrapper i {
+    visibility: visible; }
+  .topHalf h2 {
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center; }
+  .topHalf .wrapper .headNav {
+    display: none; }
+  .emailForm {
+    max-width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 20px;
+    bottom: 200px; }
+    .emailForm .name,
+    .emailForm .enterEmail {
+      width: 100%;
+      margin: 0;
+      padding: 20px 0 15px 5px; }
+    .emailForm .name {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .emailForm .enterEmail {
+      margin-bottom: 50px; }
+  .contactAside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  aside.contactAside .socialNav {
+    margin-right: 0; }
+    aside.contactAside .socialNav ul li {
+      margin: 0 20px; }
+  aside.contactAside .infoEmail {
+    margin: 0;
+    text-align: center; }
+  aside.contactAside .address {
+    text-align: center;
+    margin: 20px 0 0 0; } }
+
+@media (max-width: 400px) {
+  .emailForm {
+    -webkit-box-shadow: none;
+    box-shadow: none; } }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -482,11 +738,11 @@ h2 {
 h3 {
   font-family: 'Walter Turncoat', cursive;
   font-size: 45px;
-  margin-top: 0;
-  margin-bottom: 0; }
+  margin-top: 0; }
 
 h4 {
-  font-family: 'Walter Turncoat', cursive; }
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25px; }
 
 .wrapper {
   max-width: 1280px;
