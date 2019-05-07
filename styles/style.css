@@ -387,6 +387,20 @@ footer {
   .blogHeader h2 {
     padding-top: 100px; }
 
+header .wrapper i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden; }
+
+.blogHeader .wrapper i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden; }
+
 .blogMain {
   background: #03697c;
   padding-top: 150px;
@@ -523,6 +537,107 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+@media (max-width: 1350px) {
+  .blogText h3 {
+    margin-top: 500px;
+    line-height: 70px; }
+  aside.blogAside {
+    padding-top: 350px; }
+  .commentSection {
+    max-width: 600px; }
+  .commentForm {
+    max-width: 600px; } }
+
+@media (max-width: 1150px) {
+  .blogMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 50px; }
+  aside.blogAside {
+    padding-top: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin-left: 0;
+    margin-right: 0; }
+  .blogSideImage {
+    position: static;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; }
+    .blogSideImage img {
+      height: 300px;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      margin: 0 auto; }
+  .blogImage {
+    margin-top: 50px;
+    position: static;
+    margin-top: 50px; }
+  .blogPost {
+    border: none;
+    position: static;
+    margin-top: 50px; }
+  .blogText {
+    margin-top: 0; }
+    .blogText h3 {
+      margin-top: 0; } }
+
+@media (max-width: 900px) {
+  .blogWrapper {
+    width: 90%; }
+  .blogPost {
+    padding: 30px 20px 50px 20px; } }
+
+@media (max-width: 700px) {
+  .blogHeader {
+    height: 50vh; }
+    .blogHeader h2 {
+      font-size: 80px; } }
+
+@media (max-width: 600px) {
+  .blogHeader .wrapper .headNav {
+    display: none; }
+  .blogHeader .wrapper i {
+    visibility: visible; }
+  .blogSideImage {
+    display: none; }
+  .blogImage {
+    margin: 50px auto; }
+  .blogText h3 {
+    font-size: 50px;
+    margin-bottom: 20px; }
+  .commentSection h3 {
+    font-size: 50px; }
+  .commentSection .comment {
+    margin-bottom: 20px; }
+  .nameAndEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .nameAndEmail .commentName {
+      width: 100%;
+      margin: 0; }
+    .nameAndEmail .commentEmail {
+      width: 100%;
+      margin: 0;
+      margin-top: 30px;
+      margin-bottom: 40px; } }
+
+@media (max-width: 500px) {
+  .comment .commenter1,
+  .comment .commenter2 {
+    width: 20%;
+    margin-right: 0; }
+  .comment .commentText {
+    width: calc(80% - 20px); } }
 
 header.topHalf {
   background-image: url(../assets/contact-header.jpg);
