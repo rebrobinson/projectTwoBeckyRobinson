@@ -203,7 +203,7 @@
         display: flex;
         padding-top: 150px;
         padding-bottom: 100px;
-        align-items: center;
+        align-items: flex-start;
     }
 }
 
@@ -239,4 +239,133 @@
     margin: 0 20px;
 }
 
+@media (max-width: 1275px) {
+    .mainHeader {
+        .skateboard {
+            height: 30%;
+            width: 30%;
+            top: 400px;
+        }
+    }
+    .infoBlock {
+        margin-left: 70px;
+        width: calc(50% - 70px);
+    }
+    .topBlogLinks {
+        article {
+            margin-left: 200px;
+        }
+    }
+    .bottomBlogLinks {
+        article {
+            margin: 0 200px 0 0;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .mainHeader {
+        .skateboard {
+            display: none;
+        }
+    }
+    .info {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    .topBlogLinks {
+        h3 {
+            line-height: 55px;
+        }
+        .blogLinkImage {
+            top: 0;
+        }
+    }
+    .bottomBlogLinks {
+        h3 {
+            line-height: 55px;
+        }
+    }
+    .blogLinks {
+        padding-top: 40px;
+        padding-bottom: 60px
+    }
+}
+
+@media (max-width: 900px) {
+    .mainHeader {
+        .wrapper {
+            h1 {
+                font-size: 100px;
+            }
+        }
+    }
+    .infoBlock {
+        h3 {
+            line-height: 45px;
+        }
+    }
+    .blogLinkImage {
+        position: static;
+    }
+    .topBlogLinks {
+        flex-direction: column;
+        align-items: center;
+        article {
+            margin: 50px 0;
+            padding: 0;
+            width: 80%;
+            text-align: center;
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+    .bottomBlogLinks {
+        flex-direction: column-reverse;
+        align-items: center;
+        article {
+            width: 80%;
+            margin: 80px 0 50px 0;
+            padding: 0;
+            text-align: center;
+            h3 {
+                width: 100%;
+            }
+            button {
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+    }
+    .roadTrips {
+        padding: 80px 0;
+        p {
+            width: 90%;
+        }
+    }
+    .beachImage {
+        height: 30vh;
+    }
+    .events {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 0;
+            .eventsImage {
+                margin: 0;
+                width: 50%;
+            }
+            .eventsText {
+                margin: 0;
+                text-align: center;
+                margin-top: 70px;
+                width: 90%;
+                button {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
 
