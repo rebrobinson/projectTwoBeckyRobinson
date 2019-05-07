@@ -10,6 +10,13 @@
     }
     .wrapper {
         position: relative;
+        i {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 1.5rem;
+            visibility: hidden;
+        }
     }
     .skateboard {
         height: 40%;
@@ -22,8 +29,6 @@
         }
     }
 }
-
-
 
 // INFO SECTION
 
@@ -239,6 +244,8 @@
     margin: 0 20px;
 }
 
+//MEDIA QUERIES
+
 @media (max-width: 1275px) {
     .mainHeader {
         .skateboard {
@@ -363,9 +370,116 @@
                 width: 90%;
                 button {
                     margin: 0 auto;
+                    margin-top: 50px;
                 }
             }
         }
     }
 }
+
+@media (max-width: 700px) {
+    .mainHeader {
+        height: 50vh;
+        .wrapper h1 {
+            padding-top: 150px;
+            font-size: 75px;
+            margin-top: 0;
+        }
+        .wrapper i {
+            visibility: visible;
+        }
+        .headNav {
+            display: none;
+        }
+    }
+    .info .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoBlock {
+        width: 80%;
+        margin: 0;
+        .infoText h3 {
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+    }
+    .blogLinks {
+        padding-bottom: 0;
+    }
+    .eventsImage {
+        display: none;
+    }
+    .events .wrapper {
+        padding-top: 0;
+    }
+    .gallery {
+        padding: 50px 0;
+    }
+    .first,
+    .second {
+        width: calc(50% - 40px);
+    }
+    .gallery .third {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .infoBlock{
+        text-align: center;
+        .iconCircle {
+            display: none;
+        }
+    }
+    .topBlogLinks {
+        flex-direction: column-reverse;
+        .blogLinkImage {
+            width: 100%;
+        }
+    }
+    .bottomBlogLinks .blogLinkImage {
+        display: none;
+    }
+    .topBlogLinks article .readMore {
+        padding: 5px 10px;
+        a {
+            font-size: 18px;
+        }
+    }
+    .bottomBlogLinks article .readMore {
+        padding: 5px 10px;
+        a {
+            font-size: 18px;
+        }
+    }
+    .roadTrips h3{
+        line-height: 50px;
+    }
+    .roadTrips button { 
+        padding: 5px 10px 5px 10px;
+        a {
+            font-size: 18px;
+        }
+    }
+    .events button { 
+        padding: 5px 10px 5px 10px;
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .mainHeader .wrapper h1 {
+        font-size: 60px;
+    }
+    .info {
+        padding-top: 50px;
+    }
+    .topBlogLinks article {
+        margin-top: 0;
+    }
+}
+
 
