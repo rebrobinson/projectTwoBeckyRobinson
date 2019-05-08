@@ -8,28 +8,30 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
+  <link type="image/png" href="assets/favicon.png" rel="icon">
   <title>Fun Place Blog</title>
 </head>
 <body>
 
   <header class="blogHeader">
+    <a href="#main" class="visuallyHidden">Skip to main content.</a>
     <div class="wrapper">
       <nav class="headNav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a> </li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+          <li><a href="index.html#about" aria-label="Go to About section">About</a> </li>
+          <li><a href="blog.html" aria-label="Go to Blog page">Blog</a></li>
+          <li><a href="contact.html" aria-label="Go to Contact page">Contact</a></li>
         </ul>
       </nav>
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-bars" aria-label="Open menu"></i>
       <h2>Blog</h2>
     </div>
   </header>
 
-  <main class="blogMain">
+  <main class="blogMain" id="main">
     <div class="blogSideImage">
-      <img src="assets/blog-side-image.jpg" alt="Kids picking out chalk from a box.">
+      <img src="assets/blogSideImage.jpg" alt="Kids picking out chalk from a box.">
     </div>
 
     <aside class="blogAside">  
@@ -38,10 +40,10 @@
         <p>Nam dapibus nisl vitate elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
         <h4>Recent Posts</h4>
         <ul>
-          <li>Donec facilisis tortor ut</li>
-          <li>Augue lacinia at viverra</li>
-          <li>Semper sed sapien metus</li>
-          <li>Scelerisque nec pharetra id</li>
+          <li><a href="#" aria-label="Go to recent blog post" class="recentPost">Donec facilisis tortor ut</a></li>
+          <li><a href="#" aria-label="Go to recent blog post" class="recentPost">Augue lacinia at viverra</a></li>
+          <li><a href="#" aria-label="Go to recent blog post" class="recentPost">Semper sed sapien metus</a></li>
+          <li><a href="#" aria-label="Go to recent blog post" class="recentPost">Scelerisque nec pharetra id</a></li>
         </ul>
       </div>
     </aside>
@@ -49,7 +51,7 @@
     
     <div class="blogWrapper">
       <div class="blogImage">
-        <img src="assets/blog-post-imag.jpg" alt="Small child popping giant bubbles.">
+        <img src="assets/blogPostImage.jpg" alt="Small child popping giant bubbles.">
       </div>
       <article class="blogPost">
         <div class="blogText">
@@ -80,7 +82,7 @@
         <h3>Comments:</h3>
         <div class="comment comment1">
           <div class="commenter1">
-            <img src="assets/comment-1.jpg" alt="Image of commenter">
+            <img src="assets/comment1.jpg" alt="Image of commenter">
           </div>
           <div class="commentText">
             <p class="commentDate">Tuesday October 9th, 2019 by Mariama</p>
@@ -91,7 +93,7 @@
         </div>
         <div class="comment comment2">
           <div class="commenter2">
-            <img src="assets/comment-2.jpg" alt="Image of commenter">
+            <img src="assets/comment2.jpg" alt="Image of commenter">
           </div>
           <div class="commentText">
             <p class="commentDate">Wednesday October 10th, 2019 by Rob</p>

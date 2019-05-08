@@ -1,8 +1,8 @@
 
-//HEADER SECTION
+/* HEADER SECTION */
 
 .blogHeader {
-    background-image: url(../assets/blog-header.jpg);
+    background-image: url(../assets/blogHeader.jpg);
     background-size: cover;
     height: 70vh;
     position: relative;
@@ -31,7 +31,7 @@ header .wrapper i {
     }
 }
 
-//MAIN SECTION
+/* MAIN SECTION */
 
 .blogMain {
     background: $turquoise;
@@ -76,6 +76,14 @@ header .wrapper i {
     li {
         line-height: 35px;
     }
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.recentPost:hover {
+    color: $aqua;
 }
 
 .blogSideImage {
@@ -147,7 +155,8 @@ header .wrapper i {
     margin-bottom: 70px;
 }
 
-//FORM STYLES
+/* FORM STYLES */
+
 .commentForm {
     border: none;
     padding: 0;
@@ -168,6 +177,7 @@ header .wrapper i {
         width: calc(50% - 25px);
         padding-bottom: 20px;
         padding-left: 30px;
+        padding: 10px 0 10px 30px;
     }
     .commentName {
         margin-right: 25px;
@@ -187,15 +197,31 @@ header .wrapper i {
         width: 100%;
         margin-bottom: 100px;
     }
+    .postComment:hover {
+        background: $purple;
+        color: $aqua;
+    }
 }
+
+.commentName:active, 
+.commentEmail:active,
+.commentMessage:active {
+    background: $aqua;
+}
+
+.commentName:focus, 
+.commentEmail:focus,
+.commentMessage:focus {
+    background: white;
+    color: $turquoise;
+} 
+
 
 .nameAndEmail {
     display: flex;
 }
 
-
-
-//MEDIA QUERIES {
+/* MEDIA QUERIES */
 
 @media (max-width: 1350px) {
     .blogText {
@@ -277,14 +303,12 @@ header .wrapper i {
 }
 
 @media (max-width: 600px) {
-    .blogHeader {
-        .wrapper {
-            .headNav {
-                display: none;
-            }
-            i {
-                visibility: visible;
-            }
+    .blogHeader .wrapper {
+        .headNav {
+            display: none;
+        }
+        i {
+            visibility: visible;
         }
     } 
     .blogSideImage {

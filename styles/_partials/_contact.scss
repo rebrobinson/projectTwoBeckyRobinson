@@ -1,6 +1,7 @@
+/* HEADER SECTION */
 
 header.topHalf {
-    background-image: url(../assets/contact-header.jpg);
+    background-image: url(../assets/contactHeader.jpg);
     background-size: cover;
     background-position: center center;
     height: 60vh;
@@ -8,13 +9,15 @@ header.topHalf {
         padding-top: 100px;
     }
     .wrapper i {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 1.5rem;
-    visibility: hidden;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 1.5rem;
+        visibility: hidden;
+    }  
 }
-}
+
+/* MAIN SECTION */
 
 .bottomHalf {
     background: $turquoise;
@@ -35,9 +38,13 @@ aside.contactAside {
     }
 }
 
-.socialNav a {
+.socialIcon {
     color: white;
     font-size: 25px;
+}
+
+.socialIcon:hover {
+    color: $aqua;
 }
 
 .address {
@@ -64,8 +71,9 @@ aside.contactAside {
     .name,
     .enterEmail {
         width: calc(50% - 10px);
-        padding: 80px 0px 30px 20px;
+        padding: 20px 0px 30px 20px;
         margin-bottom: 40px;
+        margin-top: 80px;
         border: none;
         border-bottom: 2px solid white;
         background: $purple;
@@ -80,12 +88,27 @@ aside.contactAside {
         border: 2px solid white;
         color: white;
     }   
+    .name:active,
+    .enterEmail:active,
+    .message:active {
+        background: $turquoise;
+    }
+    .name:focus,
+    .enterEmail:focus,
+    .message:focus {
+        background: $aqua;
+        color: $purple;
+    }
     button {
         background: $aqua;
         color: $purple;
         width: 100%;
         margin-bottom: 50px;
         padding: 6px;
+    }
+    button:hover {
+        background: $blue;
+        color: $aqua;
     }
 }
 
@@ -98,13 +121,12 @@ aside.contactAside {
 }
 
 
-//MEDIA QUERIES
+/*MEDIA QUERIES*/
 
 @media (max-width: 1480px) {
     .emailForm {
         margin-left: 100px;
     }
-    
     aside.contactAside {
         margin-left: 5%;
     }
@@ -148,7 +170,6 @@ aside.contactAside {
             margin-top: 0;
         }
     }
-
 }
 
 @media (max-width: 875px) {
@@ -163,13 +184,10 @@ aside.contactAside {
 }
 
 @media (max-width: 600px) {
-    header.topHalf {
-        .wrapper {
-            i {
-                visibility: visible;
-            }
+    header.topHalf .wrapper 
+        i {
+            visibility: visible;
         }
-    }
     .topHalf {
         h2 {
             font-size: 60px;
@@ -206,11 +224,9 @@ aside.contactAside {
     aside.contactAside {
         .socialNav {
             margin-right: 0;
-            ul {
-                li {
-                    margin: 0 20px;
-                }
-            }
+        }
+        .socialNav ul li {
+            margin: 0 20px;
         }
         .infoEmail {
             margin: 0;

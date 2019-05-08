@@ -1,8 +1,8 @@
 
-//HEADER SECTION
+/* HEADER SECTION */
 
 .mainHeader {
-    background-image: url(../assets/home-header.jpg);
+    background-image: url(../assets/homeHeader.jpg);
     background-size: cover;
     height: 75vh;
     h1 {
@@ -30,7 +30,7 @@
     }
 }
 
-// INFO SECTION
+/* INFO SECTION */
 
 .info {
     background-color: $turquoise;
@@ -86,7 +86,7 @@
     margin-left: 50px;
 }
 
-//BLOG SECTION
+/* BLOG SECTION */
 
 .blogLinks {
     background: $purple;
@@ -106,7 +106,6 @@
     article {
         margin-left: 325px;
         padding-right: 80px;
-
     }
     .blogLinkImage {
         position: relative;
@@ -160,10 +159,18 @@
         font-size: 25px;
         text-decoration: none;
         text-align: center;
+        padding: 5px 10px;
     }
 }
 
-// ROAD TRIP ARTICLE
+.readMore:hover {
+    background: $blue;
+}
+.readMore a:hover {
+    color: $aqua;
+}
+
+/* ROAD TRIP ARTICLE */
 
 .roadTrips {
     background: $turquoise;
@@ -192,10 +199,19 @@
         font-size: 25px;
         text-decoration: none;
         text-align: center;
+        padding: 10px;
     }
 }
 
-//EVENTS SECTION
+.findOutMore:hover {
+    background: $purple;
+}
+
+.findOutMore a:hover {
+    color: $aqua;
+}
+
+/* EVENTS SECTION */
 
 .beachImage {
     background-image: url(../assets/banner.jpg);
@@ -226,8 +242,7 @@
     margin-left: 50px;
 }
 
-
-//GALLERY SECTION
+/* GALLERY SECTION */
 
 .gallery {
     background: $purple;
@@ -244,7 +259,7 @@
     margin: 0 20px;
 }
 
-//MEDIA QUERIES
+/* MEDIA QUERIES */
 
 @media (max-width: 1275px) {
     .mainHeader {
@@ -300,12 +315,8 @@
 }
 
 @media (max-width: 900px) {
-    .mainHeader {
-        .wrapper {
-            h1 {
-                font-size: 100px;
-            }
-        }
+    .mainHeader h1 {
+        font-size: 100px;
     }
     .infoBlock {
         h3 {
@@ -318,31 +329,31 @@
     .topBlogLinks {
         flex-direction: column;
         align-items: center;
-        article {
-            margin: 50px 0;
-            padding: 0;
-            width: 80%;
-            text-align: center;
-            button {
-                margin: 0 auto;
-            }
+    }
+    .topBlogLinks article {
+        margin: 50px 0;
+        padding: 0;
+        width: 80%;
+        text-align: center;
+        button {
+            margin: 0 auto;
         }
     }
     .bottomBlogLinks {
         flex-direction: column-reverse;
         align-items: center;
-        article {
-            width: 80%;
-            margin: 80px 0 50px 0;
-            padding: 0;
-            text-align: center;
-            h3 {
-                width: 100%;
-            }
-            button {
-                margin: 0 auto;
-                margin-top: 20px;
-            }
+    }
+    .bottomBlogLinks article {
+        width: 80%;
+        margin: 80px 0 50px 0;
+        padding: 0;
+        text-align: center;
+        h3 {
+            width: 100%;
+        }
+        button {
+            margin: 0 auto;
+            margin-top: 20px;
         }
     }
     .roadTrips {
@@ -354,25 +365,23 @@
     .beachImage {
         height: 30vh;
     }
-    .events {
-        .wrapper {
-            flex-direction: column;
-            align-items: center;
-            padding: 80px 0;
-            .eventsImage {
-                margin: 0;
-                width: 50%;
-            }
-            .eventsText {
-                margin: 0;
-                text-align: center;
-                margin-top: 70px;
-                width: 90%;
-                button {
-                    margin: 0 auto;
-                    margin-top: 50px;
-                }
-            }
+    .events .wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0;
+        .eventsImage {
+            margin: 0;
+            width: 50%;
+        }
+    }
+    .events .wrapper .eventsText {
+        margin: 0;
+        text-align: center;
+        margin-top: 70px;
+        width: 90%;
+        button {
+            margin: 0 auto;
+            margin-top: 50px;
         }
     }
 }
@@ -426,7 +435,7 @@
 }
 
 @media (max-width: 570px) {
-    .infoBlock{
+    .infoBlock {
         text-align: center;
         .iconCircle {
             display: none;
@@ -481,5 +490,3 @@
         margin-top: 0;
     }
 }
-
-

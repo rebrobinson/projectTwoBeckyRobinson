@@ -8,41 +8,43 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
+  <link type="image/png" href="assets/favicon.png" rel="icon">
   <title>Contact</title>
 </head>
 
 <body>
 
   <header class="topHalf">
+    <a href="#main" class="visuallyHidden">Skip to main content.</a>
     <div class="wrapper">
       <nav class="headNav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a> </li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+          <li><a href="index.html#about" aria-label="Go to About section">About</a> </li>
+          <li><a href="blog.html" aria-label="Go to Blog page">Blog</a></li>
+          <li><a href="contact.html" aria-label="Go to contact page">Contact</a></li>
         </ul>
       </nav>
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-bars" aria-label="Open menu"></i>
       <h2>Get in Touch</h2>
     </div>
   </header>
 
-  <div class="bottomHalf">
+  <div class="bottomHalf" id="main">
     <aside class="contactAside">
       <nav class="socialNav">
         <ul>
           <li> 
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Go to Facebook" class="socialIcon"><i class="fab fa-facebook-f"></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Go to Instagram" class="socialIcon"><i class="fab fa-instagram"></i></a>
           </li>
           <li>
-            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.twitter.com/" aria-label="Go to Twitter" class="socialIcon"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.whatsapp.com/" aria-label="Go to Whatsapp" class="socialIcon"><i class="fab fa-whatsapp"></i></a>
           </li>
         </ul>
       </nav>

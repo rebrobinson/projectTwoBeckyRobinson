@@ -173,8 +173,9 @@ footer {
     padding: 5px;
     margin: 0; }
 
+/* HEADER SECTION */
 .mainHeader {
-  background-image: url(../assets/home-header.jpg);
+  background-image: url(../assets/homeHeader.jpg);
   background-size: cover;
   height: 75vh; }
   .mainHeader h1 {
@@ -196,6 +197,7 @@ footer {
     .mainHeader .skateboard img {
       display: block; }
 
+/* INFO SECTION */
 .info {
   background-color: #03697c;
   padding-top: 200px;
@@ -238,6 +240,7 @@ footer {
 .infoBlock {
   margin-left: 50px; }
 
+/* BLOG SECTION */
 .blogLinks {
   background: #474bb5;
   padding-top: 100px; }
@@ -313,8 +316,16 @@ footer {
     font-family: 'Walter Turncoat', cursive;
     font-size: 25px;
     text-decoration: none;
-    text-align: center; }
+    text-align: center;
+    padding: 5px 10px; }
 
+.readMore:hover {
+  background: #044779; }
+
+.readMore a:hover {
+  color: #08fded; }
+
+/* ROAD TRIP ARTICLE */
 .roadTrips {
   background: #03697c;
   padding-top: 150px;
@@ -337,8 +348,16 @@ footer {
     font-family: 'Walter Turncoat', cursive;
     font-size: 25px;
     text-decoration: none;
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
 
+.findOutMore:hover {
+  background: #474bb5; }
+
+.findOutMore a:hover {
+  color: #08fded; }
+
+/* EVENTS SECTION */
 .beachImage {
   background-image: url(../assets/banner.jpg);
   height: 50vh; }
@@ -367,6 +386,7 @@ footer {
   width: calc(70% - 50px);
   margin-left: 50px; }
 
+/* GALLERY SECTION */
 .gallery {
   background: #474bb5;
   -webkit-box-pack: center;
@@ -385,6 +405,7 @@ footer {
   width: calc(33% - 40px);
   margin: 0 20px; }
 
+/* MEDIA QUERIES */
 @media (max-width: 1275px) {
   .mainHeader .skateboard {
     height: 30%;
@@ -415,7 +436,7 @@ footer {
     padding-bottom: 60px; } }
 
 @media (max-width: 900px) {
-  .mainHeader .wrapper h1 {
+  .mainHeader h1 {
     font-size: 100px; }
   .infoBlock h3 {
     line-height: 45px; }
@@ -429,13 +450,13 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .topBlogLinks article {
-      margin: 50px 0;
-      padding: 0;
-      width: 80%;
-      text-align: center; }
-      .topBlogLinks article button {
-        margin: 0 auto; }
+  .topBlogLinks article {
+    margin: 50px 0;
+    padding: 0;
+    width: 80%;
+    text-align: center; }
+    .topBlogLinks article button {
+      margin: 0 auto; }
   .bottomBlogLinks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -444,16 +465,16 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .bottomBlogLinks article {
-      width: 80%;
-      margin: 80px 0 50px 0;
-      padding: 0;
-      text-align: center; }
-      .bottomBlogLinks article h3 {
-        width: 100%; }
-      .bottomBlogLinks article button {
-        margin: 0 auto;
-        margin-top: 20px; }
+  .bottomBlogLinks article {
+    width: 80%;
+    margin: 80px 0 50px 0;
+    padding: 0;
+    text-align: center; }
+    .bottomBlogLinks article h3 {
+      width: 100%; }
+    .bottomBlogLinks article button {
+      margin: 0 auto;
+      margin-top: 20px; }
   .roadTrips {
     padding: 80px 0; }
     .roadTrips p {
@@ -472,14 +493,14 @@ footer {
     .events .wrapper .eventsImage {
       margin: 0;
       width: 50%; }
-    .events .wrapper .eventsText {
-      margin: 0;
-      text-align: center;
-      margin-top: 70px;
-      width: 90%; }
-      .events .wrapper .eventsText button {
-        margin: 0 auto;
-        margin-top: 50px; } }
+  .events .wrapper .eventsText {
+    margin: 0;
+    text-align: center;
+    margin-top: 70px;
+    width: 90%; }
+    .events .wrapper .eventsText button {
+      margin: 0 auto;
+      margin-top: 50px; } }
 
 @media (max-width: 700px) {
   .mainHeader {
@@ -561,8 +582,9 @@ footer {
   .topBlogLinks article {
     margin-top: 0; } }
 
+/* HEADER SECTION */
 .blogHeader {
-  background-image: url(../assets/blog-header.jpg);
+  background-image: url(../assets/blogHeader.jpg);
   background-size: cover;
   height: 70vh;
   position: relative; }
@@ -583,6 +605,7 @@ header .wrapper i {
   font-size: 1.5rem;
   visibility: hidden; }
 
+/* MAIN SECTION */
 .blogMain {
   background: #03697c;
   padding-top: 150px;
@@ -622,6 +645,12 @@ header .wrapper i {
     margin-left: -1em; }
   .asideText li {
     line-height: 35px; }
+  .asideText li a {
+    color: white;
+    text-decoration: none; }
+
+.recentPost:hover {
+  color: #08fded; }
 
 .blogSideImage {
   position: absolute;
@@ -681,6 +710,7 @@ header .wrapper i {
 .comment2 {
   margin-bottom: 70px; }
 
+/* FORM STYLES */
 .commentForm {
   border: none;
   padding: 0;
@@ -699,7 +729,8 @@ header .wrapper i {
     border-bottom: 2px solid #08fded;
     width: calc(50% - 25px);
     padding-bottom: 20px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    padding: 10px 0 10px 30px; }
   .commentForm .commentName {
     margin-right: 25px; }
   .commentForm .commentEmail {
@@ -714,12 +745,27 @@ header .wrapper i {
     padding: 5px;
     width: 100%;
     margin-bottom: 100px; }
+  .commentForm .postComment:hover {
+    background: #474bb5;
+    color: #08fded; }
+
+.commentName:active,
+.commentEmail:active,
+.commentMessage:active {
+  background: #08fded; }
+
+.commentName:focus,
+.commentEmail:focus,
+.commentMessage:focus {
+  background: white;
+  color: #03697c; }
 
 .nameAndEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
+/* MEDIA QUERIES */
 @media (max-width: 1350px) {
   .blogText h3 {
     margin-top: 500px;
@@ -821,8 +867,9 @@ header .wrapper i {
   .comment .commentText {
     width: calc(80% - 20px); } }
 
+/* HEADER SECTION */
 header.topHalf {
-  background-image: url(../assets/contact-header.jpg);
+  background-image: url(../assets/contactHeader.jpg);
   background-size: cover;
   background-position: center center;
   height: 60vh; }
@@ -835,6 +882,7 @@ header.topHalf {
     font-size: 1.5rem;
     visibility: hidden; }
 
+/* MAIN SECTION */
 .bottomHalf {
   background: #03697c;
   display: -webkit-box;
@@ -854,9 +902,12 @@ aside.contactAside {
   .socialNav ul li {
     margin-right: 25px; }
 
-.socialNav a {
+.socialIcon {
   color: white;
   font-size: 25px; }
+
+.socialIcon:hover {
+  color: #08fded; }
 
 .address {
   margin-top: 35px; }
@@ -884,8 +935,9 @@ aside.contactAside {
   .emailForm .name,
   .emailForm .enterEmail {
     width: calc(50% - 10px);
-    padding: 80px 0px 30px 20px;
+    padding: 20px 0px 30px 20px;
     margin-bottom: 40px;
+    margin-top: 80px;
     border: none;
     border-bottom: 2px solid white;
     background: #474bb5;
@@ -898,12 +950,24 @@ aside.contactAside {
     background: #474bb5;
     border: 2px solid white;
     color: white; }
+  .emailForm .name:active,
+  .emailForm .enterEmail:active,
+  .emailForm .message:active {
+    background: #03697c; }
+  .emailForm .name:focus,
+  .emailForm .enterEmail:focus,
+  .emailForm .message:focus {
+    background: #08fded;
+    color: #474bb5; }
   .emailForm button {
     background: #08fded;
     color: #474bb5;
     width: 100%;
     margin-bottom: 50px;
     padding: 6px; }
+  .emailForm button:hover {
+    background: #044779;
+    color: #08fded; }
 
 .name {
   margin-right: 10px; }
@@ -911,6 +975,7 @@ aside.contactAside {
 .enterEmail {
   margin-left: 10px; }
 
+/*MEDIA QUERIES*/
 @media (max-width: 1480px) {
   .emailForm {
     margin-left: 100px; }
@@ -961,7 +1026,8 @@ aside.contactAside {
     max-width: 600px; } }
 
 @media (max-width: 600px) {
-  header.topHalf .wrapper i {
+  header.topHalf .wrapper
+i {
     visibility: visible; }
   .topHalf h2 {
     font-size: 60px;
@@ -997,8 +1063,8 @@ aside.contactAside {
     align-items: center; }
   aside.contactAside .socialNav {
     margin-right: 0; }
-    aside.contactAside .socialNav ul li {
-      margin: 0 20px; }
+  aside.contactAside .socialNav ul li {
+    margin: 0 20px; }
   aside.contactAside .infoEmail {
     margin: 0;
     text-align: center; }
