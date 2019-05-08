@@ -34,8 +34,7 @@
 
 .info {
     background-color: $turquoise;
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding: 200px 0 100px 0;
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -174,8 +173,7 @@
 
 .roadTrips {
     background: $turquoise;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding: 150px 0 100px 0;
     h3 {
         text-align: center;
     }
@@ -185,8 +183,7 @@
         margin: 0 auto;
     }
     button {
-        margin: 0 auto;
-        margin-top: 50px;
+        margin: 50px auto 0 auto;
     }
 }
 
@@ -222,8 +219,7 @@
     background: $turquoise;
     .wrapper {
         display: flex;
-        padding-top: 150px;
-        padding-bottom: 100px;
+        padding: 150px 0 100px 0;
         align-items: flex-start;
     }
 }
@@ -292,25 +288,19 @@
         }
     }
     .info {
-        padding-top: 100px;
-        padding-bottom: 30px;
+        padding: 100px 0 30px 0;
+    }
+    .blogLinks {
+        padding: 40px 0 60px 0;
+    }
+    .topBlogLinks h3,
+    .bottomBlogLinks h3 {
+        line-height: 55px;
     }
     .topBlogLinks {
-        h3 {
-            line-height: 55px;
-        }
         .blogLinkImage {
             top: 0;
         }
-    }
-    .bottomBlogLinks {
-        h3 {
-            line-height: 55px;
-        }
-    }
-    .blogLinks {
-        padding-top: 40px;
-        padding-bottom: 60px
     }
 }
 
@@ -330,29 +320,28 @@
         flex-direction: column;
         align-items: center;
     }
-    .topBlogLinks article {
-        margin: 50px 0;
-        padding: 0;
+    .topBlogLinks article,
+    .bottomBlogLinks article {
         width: 80%;
+        padding: 0;
         text-align: center;
         button {
             margin: 0 auto;
         }
+    }
+    .topBlogLinks article {
+        margin: 50px 0;
     }
     .bottomBlogLinks {
         flex-direction: column-reverse;
         align-items: center;
     }
     .bottomBlogLinks article {
-        width: 80%;
         margin: 80px 0 50px 0;
-        padding: 0;
-        text-align: center;
         h3 {
             width: 100%;
         }
         button {
-            margin: 0 auto;
             margin-top: 20px;
         }
     }
@@ -375,9 +364,8 @@
         }
     }
     .events .wrapper .eventsText {
-        margin: 0;
+        margin: 70px 0 0 0;
         text-align: center;
-        margin-top: 70px;
         width: 90%;
         button {
             margin: 0 auto;
@@ -450,12 +438,7 @@
     .bottomBlogLinks .blogLinkImage {
         display: none;
     }
-    .topBlogLinks article .readMore {
-        padding: 5px 10px;
-        a {
-            font-size: 18px;
-        }
-    }
+    .topBlogLinks article .readMore,
     .bottomBlogLinks article .readMore {
         padding: 5px 10px;
         a {
@@ -465,12 +448,7 @@
     .roadTrips h3{
         line-height: 50px;
     }
-    .roadTrips button { 
-        padding: 5px 10px 5px 10px;
-        a {
-            font-size: 18px;
-        }
-    }
+    .roadTrips button,
     .events button { 
         padding: 5px 10px 5px 10px;
         a {

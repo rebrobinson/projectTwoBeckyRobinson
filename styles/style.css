@@ -200,8 +200,7 @@ footer {
 /* INFO SECTION */
 .info {
   background-color: #03697c;
-  padding-top: 200px;
-  padding-bottom: 100px; }
+  padding: 200px 0 100px 0; }
   .info .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -328,8 +327,7 @@ footer {
 /* ROAD TRIP ARTICLE */
 .roadTrips {
   background: #03697c;
-  padding-top: 150px;
-  padding-bottom: 100px; }
+  padding: 150px 0 100px 0; }
   .roadTrips h3 {
     text-align: center; }
   .roadTrips p {
@@ -337,8 +335,7 @@ footer {
     width: 70%;
     margin: 0 auto; }
   .roadTrips button {
-    margin: 0 auto;
-    margin-top: 50px; }
+    margin: 50px auto 0 auto; }
 
 .findOutMore {
   background: #08fded;
@@ -368,8 +365,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding: 150px 0 100px 0;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
@@ -423,17 +419,14 @@ footer {
   .mainHeader .skateboard {
     display: none; }
   .info {
-    padding-top: 100px;
-    padding-bottom: 30px; }
-  .topBlogLinks h3 {
-    line-height: 55px; }
-  .topBlogLinks .blogLinkImage {
-    top: 0; }
+    padding: 100px 0 30px 0; }
+  .blogLinks {
+    padding: 40px 0 60px 0; }
+  .topBlogLinks h3,
   .bottomBlogLinks h3 {
     line-height: 55px; }
-  .blogLinks {
-    padding-top: 40px;
-    padding-bottom: 60px; } }
+  .topBlogLinks .blogLinkImage {
+    top: 0; } }
 
 @media (max-width: 900px) {
   .mainHeader h1 {
@@ -450,13 +443,16 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .topBlogLinks article {
-    margin: 50px 0;
-    padding: 0;
+  .topBlogLinks article,
+  .bottomBlogLinks article {
     width: 80%;
+    padding: 0;
     text-align: center; }
-    .topBlogLinks article button {
+    .topBlogLinks article button,
+    .bottomBlogLinks article button {
       margin: 0 auto; }
+  .topBlogLinks article {
+    margin: 50px 0; }
   .bottomBlogLinks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -466,14 +462,10 @@ footer {
     -ms-flex-align: center;
     align-items: center; }
   .bottomBlogLinks article {
-    width: 80%;
-    margin: 80px 0 50px 0;
-    padding: 0;
-    text-align: center; }
+    margin: 80px 0 50px 0; }
     .bottomBlogLinks article h3 {
       width: 100%; }
     .bottomBlogLinks article button {
-      margin: 0 auto;
       margin-top: 20px; }
   .roadTrips {
     padding: 80px 0; }
@@ -494,9 +486,8 @@ footer {
       margin: 0;
       width: 50%; }
   .events .wrapper .eventsText {
-    margin: 0;
+    margin: 70px 0 0 0;
     text-align: center;
-    margin-top: 70px;
     width: 90%; }
     .events .wrapper .eventsText button {
       margin: 0 auto;
@@ -555,22 +546,18 @@ footer {
       width: 100%; }
   .bottomBlogLinks .blogLinkImage {
     display: none; }
-  .topBlogLinks article .readMore {
-    padding: 5px 10px; }
-    .topBlogLinks article .readMore a {
-      font-size: 18px; }
+  .topBlogLinks article .readMore,
   .bottomBlogLinks article .readMore {
     padding: 5px 10px; }
+    .topBlogLinks article .readMore a,
     .bottomBlogLinks article .readMore a {
       font-size: 18px; }
   .roadTrips h3 {
     line-height: 50px; }
-  .roadTrips button {
-    padding: 5px 10px 5px 10px; }
-    .roadTrips button a {
-      font-size: 18px; }
+  .roadTrips button,
   .events button {
     padding: 5px 10px 5px 10px; }
+    .roadTrips button a,
     .events button a {
       font-size: 18px; } }
 
@@ -588,22 +575,14 @@ footer {
   background-size: cover;
   height: 70vh;
   position: relative; }
+  .blogHeader .wrapper i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    visibility: hidden; }
   .blogHeader h2 {
     padding-top: 100px; }
-
-header .wrapper i {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 1.5rem;
-  visibility: hidden; }
-
-.blogHeader .wrapper i {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 1.5rem;
-  visibility: hidden; }
 
 /* MAIN SECTION */
 .blogMain {
@@ -619,6 +598,14 @@ header .wrapper i {
   .blogMain h3 {
     font-size: 70px; }
 
+.blogSideImage {
+  position: absolute;
+  left: 0px;
+  top: 120px;
+  width: 30%; }
+  .blogSideImage img {
+    display: block; }
+
 .blogAside {
   background: #474bb5;
   max-width: 380px;
@@ -629,36 +616,26 @@ header .wrapper i {
   height: 100%; }
   .blogAside h4 {
     margin-bottom: 0; }
-
-.asideText {
-  /* got this from w3schools.com */ }
-  .asideText p {
-    margin-bottom: 60px; }
-  .asideText ul {
-    list-style: none; }
-  .asideText ul li::before {
-    content: "\2022";
-    color: #08fded;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em; }
-  .asideText li {
-    line-height: 35px; }
-  .asideText li a {
-    color: white;
-    text-decoration: none; }
-
-.recentPost:hover {
-  color: #08fded; }
-
-.blogSideImage {
-  position: absolute;
-  left: 0px;
-  top: 120px;
-  width: 30%; }
-  .blogSideImage img {
-    display: block; }
+  .blogAside .asideText {
+    /* got this from w3schools.com */ }
+    .blogAside .asideText p {
+      margin-bottom: 60px; }
+    .blogAside .asideText ul {
+      list-style: none; }
+    .blogAside .asideText ul li::before {
+      content: "\2022";
+      color: #08fded;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; }
+    .blogAside .asideText li {
+      line-height: 35px; }
+    .blogAside .asideText li a {
+      color: white;
+      text-decoration: none; }
+    .blogAside .asideText .recentPost:hover {
+      color: #08fded; }
 
 .blogWrapper {
   width: 65%;
@@ -716,20 +693,21 @@ header .wrapper i {
   padding: 0;
   max-width: 800px;
   margin: 0 auto; }
+  .commentForm .nameAndEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .commentForm .commentName,
   .commentForm .commentEmail,
   .commentForm .commentMessage {
     background: #03697c;
     color: white;
     border: none;
-    margin-bottom: 30px;
-    padding: 0; }
+    margin-bottom: 30px; }
   .commentForm .commentName,
   .commentForm .commentEmail {
     border-bottom: 2px solid #08fded;
     width: calc(50% - 25px);
-    padding-bottom: 20px;
-    padding-left: 30px;
     padding: 10px 0 10px 30px; }
   .commentForm .commentName {
     margin-right: 25px; }
@@ -759,11 +737,6 @@ header .wrapper i {
 .commentMessage:focus {
   background: white;
   color: #03697c; }
-
-.nameAndEmail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 /* MEDIA QUERIES */
 @media (max-width: 1350px) {
@@ -805,7 +778,6 @@ header .wrapper i {
       object-fit: cover;
       margin: 0 auto; }
   .blogImage {
-    margin-top: 50px;
     position: static;
     margin-top: 50px; }
   .blogPost {
@@ -855,9 +827,7 @@ header .wrapper i {
       margin: 0; }
     .nameAndEmail .commentEmail {
       width: 100%;
-      margin: 0;
-      margin-top: 30px;
-      margin-bottom: 40px; } }
+      margin: 30px 0 40px 0; } }
 
 @media (max-width: 500px) {
   .comment .commenter1,
@@ -1006,8 +976,7 @@ aside.contactAside {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 0 50px 50px 50px;
-    padding-bottom: 50px; }
+    padding: 0 50px 50px 50px; }
     aside.contactAside .socialNav {
       margin-right: 30px;
       margin-top: 0; }

@@ -6,20 +6,6 @@
     background-size: cover;
     height: 70vh;
     position: relative;
-    h2 {
-        padding-top: 100px;
-    }
-}
-
-header .wrapper i {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 1.5rem;
-    visibility: hidden;
-}
-
-.blogHeader {
     .wrapper {
         i {
             position: absolute;
@@ -28,6 +14,9 @@ header .wrapper i {
             font-size: 1.5rem;
             visibility: hidden;
         }
+    }
+    h2 {
+        padding-top: 100px;
     }
 }
 
@@ -44,6 +33,16 @@ header .wrapper i {
     }
 }
 
+.blogSideImage {
+    position: absolute; 
+    left: 0px;
+    top: 120px;
+    width: 30%;
+    img {
+        display: block;
+    }
+}
+
 .blogAside {
     background: $purple;
     max-width: 380px;
@@ -55,44 +54,32 @@ header .wrapper i {
     h4 {
         margin-bottom: 0;
     }
-}
-
-.asideText {
-    p {
-        margin-bottom: 60px;
-    }
-    ul {
-        list-style: none;
-    }
-    /* got this from w3schools.com */
-    ul li::before {
-        content: "\2022"; 
-        color: $aqua; 
-        font-weight: bold; 
-        display: inline-block; 
-        width: 1em; 
-        margin-left: -1em; 
-    }
-    li {
-        line-height: 35px;
-    }
-    li a {
-        color: white;
-        text-decoration: none;
-    }
-}
-
-.recentPost:hover {
-    color: $aqua;
-}
-
-.blogSideImage {
-    position: absolute; 
-    left: 0px;
-    top: 120px;
-    width: 30%;
-    img {
-        display: block;
+    .asideText {
+        p {
+            margin-bottom: 60px;
+        }
+        ul {
+            list-style: none;
+        }
+        /* got this from w3schools.com */
+        ul li::before {
+            content: "\2022"; 
+            color: $aqua; 
+            font-weight: bold; 
+            display: inline-block; 
+            width: 1em; 
+            margin-left: -1em; 
+        }
+        li {
+            line-height: 35px;
+        }
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+        .recentPost:hover {
+            color: $aqua;
+        }
     }
 }
 
@@ -162,6 +149,9 @@ header .wrapper i {
     padding: 0;
     max-width: 800px;
     margin: 0 auto;
+    .nameAndEmail {
+        display: flex;
+    }
     .commentName,
     .commentEmail, 
     .commentMessage {
@@ -169,14 +159,11 @@ header .wrapper i {
         color: white;
         border: none;
         margin-bottom: 30px;
-        padding: 0;
     }
     .commentName, 
     .commentEmail {
         border-bottom: 2px solid $aqua;
         width: calc(50% - 25px);
-        padding-bottom: 20px;
-        padding-left: 30px;
         padding: 10px 0 10px 30px;
     }
     .commentName {
@@ -215,11 +202,6 @@ header .wrapper i {
     background: white;
     color: $turquoise;
 } 
-
-
-.nameAndEmail {
-    display: flex;
-}
 
 /* MEDIA QUERIES */
 
@@ -267,7 +249,6 @@ header .wrapper i {
         }
     }
     .blogImage {
-        margin-top: 50px;
         position: static;
         margin-top: 50px
     }
@@ -339,9 +320,7 @@ header .wrapper i {
         }
         .commentEmail {
             width: 100%;
-            margin: 0;
-            margin-top: 30px;
-            margin-bottom: 40px;
+            margin: 30px 0 40px 0;
         }
     }
 }
